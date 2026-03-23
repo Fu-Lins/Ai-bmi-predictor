@@ -49,6 +49,7 @@ python APP_baslat.py
 (Kod çalıştıktan sonra tarayıcınız otomatik olarak açılacak ve Gradio arayüzü karşınıza gelecektir. Sunucu linki üzerinden projeyi başka cihazlardan da test edebilirsiniz.)
 
 ⚠️ Limitasyonlar ve Gelecek Çalışmalar (Future Work)
+
 -Kamera Lensi ve Açı Yanılsamaları: Selfie kamerasıyla çok yakından çekilen ("balık gözü" etkisine maruz kalmış) fotoğraflarda model, yüzün ekranda kapladığı piksel yoğunluğunu "hacim artışı" olarak yorumlayıp skoru olduğundan yüksek (Örn: +4 puan) tahmin edebilmektedir.
 
 -Arka Plan ve Işık: "In-the-wild" (doğal ortam) fotoğraflarında arka plandaki karmaşıklık ve ışık gölgeleri, çene/boyun hattının yanlış algılanmasına sebep olabilmektedir.
