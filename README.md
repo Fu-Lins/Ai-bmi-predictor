@@ -31,21 +31,27 @@ Model, PyTorch altyapısı ile sıfırdan inşa edilmiştir:
 
 ## ⚙️ Kurulum ve Çalıştırma (Lokal Ortam)
 
-Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyebilirsiniz.
+**ÖNEMLİ NOT:** Model dosyasının boyutu (~200 MB) GitHub limitlerini aştığı için harici bir sunucuda tutulmaktadır. 
 
 **1. Depoyu Klonlayın:**
-```bash
-git clone https://github.com/Fu-Lins/Ai-bmi-predictor.git
+`bash
+git clone https://github.com/KULLANICI_ADIN/ai-bmi-predictor.git
 cd ai-bmi-predictor
-```
-2. Gerekli Kütüphaneleri Yükleyin:
-```bash
+`
+
+**2. Gerekli Kütüphaneleri Yükleyin:**
+`bash
 pip install -r requirements.txt
-```
-3. Uygulamayı Başlatın:
-```bash
+`
+
+**3. Yapay Zeka Modelini İndirin:**
+- [BURAYA TIKLAYARAK](https://drive.google.com/file/d/1IVttpG0qap3TWODvrRbIKIv82jpEuWvl/view?usp=sharing)  `bmi_model_buyuk_veri_v1.pt` isimli model dosyasını indirin.
+- İndirdiğiniz bu dosyayı, `APP_baslat.py` dosyası ile **aynı klasörün içine** atın.
+
+**4. Uygulamayı Başlatın:**
+`bash
 python APP_baslat.py
-```
+`
 (Kod çalıştıktan sonra tarayıcınız otomatik olarak açılacak ve Gradio arayüzü karşınıza gelecektir. Sunucu linki üzerinden projeyi başka cihazlardan da test edebilirsiniz.)
 
 ⚠️ Limitasyonlar ve Gelecek Çalışmalar (Future Work)
