@@ -1,13 +1,13 @@
 # 🤖 Yapay Zeka Destekli Fotoğraftan BMI (Vücut Kitle İndeksi) Tahmini
 
 Bu Proje Makine öğrenmesi ders projesi için yapılmıştır, finansal amaç güdülmemektedir.
-Bu proje, derin öğrenme (Deep Learning) ve Evrişimli Sinir Ağları (CNN) teknikleri kullanılarak, kişilerin yüz ve boyun/omuz bölgesi fotoğraflarından Vücut Kitle İndeksi (BMI) değerini saniyeler içinde tahmin eden bir yapay zeka uygulamasıdır. 
+Bu proje, derin öğrenme (Deep Learning) ve Evrişimli Sinir Ağları (CNN) teknikleri kullanılarak, kişilerin tam vücut proporsiyonlarına ve uzuv-gövde oranlarına (limb-to-torso ratio) bakılarak, fotoğraflarından Vücut Kitle İndeksi (BMI) değerini saniyeler içinde tahmin eden bir yapay zeka uygulamasıdır. 
 
 Uygulama, PyTorch ile eğitilmiş özel bir sinir ağı modelini (BmiNet) arka planda çalıştırır ve **Gradio** kütüphanesi ile geliştirilmiş kullanıcı dostu bir web arayüzü üzerinden hizmet verir.
 
 ## 🚀 Projenin Öne Çıkan Özellikleri
 
-- **Özel CNN Mimarisi (BmiNet):** Yüz hatlarındaki hacimsel ve yapısal farklılıkları öğrenmek üzere 3 evrişim (convolutional) ve 3 tam bağlı (fully connected) katmandan oluşan özgün bir mimari tasarlanmıştır.
+- **Özel CNN Mimarisi (BmiNet):** Yüz ve vücut hatlarındaki hacimsel ve yapısal farklılıkları öğrenmek üzere 3 evrişim (convolutional) ve 3 tam bağlı (fully connected) katmandan oluşan özgün bir mimari tasarlanmıştır.
 - **Data Augmentation (Veri Çeşitlendirme):** Modelin ezberlemesini (overfitting) önlemek ve farklı açılara toleransını artırmak için eğitim sırasında `RandomHorizontalFlip` ve `RandomRotation` gibi görüntü işleme teknikleri kullanılmıştır.
 - **Kullanıcı Dostu Web Arayüzü:** Gradio ile tasarlanan arayüz, kullanıcının fotoğraf yüklemesine, anlık BMI değerini ve Dünya Sağlık Örgütü (WHO) kategorisini görmesine olanak tanır.
 - **Sürekli Öğrenme (Flagging):** Arayüze entegre edilen "Geri Bildirim" sistemi sayesinde hatalı tahminler kategorize edilerek kaydedilir ve modelin gelecekteki eğitimleri için yeni bir veri havuzu oluşturur.
