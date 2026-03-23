@@ -35,7 +35,7 @@ Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları i
 
 **1. Depoyu Klonlayın:**
 ```bash
-git clone https://github.com/KULLANICI_ADIN/Ai-bmi-predictor.git
+git clone https://github.com/Fu-Lins/Ai-bmi-predictor.git
 cd ai-bmi-predictor
 ```
 2. Gerekli Kütüphaneleri Yükleyin:
